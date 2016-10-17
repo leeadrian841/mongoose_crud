@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 well">
+        <h1>ANIMAL SHELTER</h1>
+        <h2>Add an animal</h2>
+        <form class="form-inline" method="post" action="/animals">
+          <div class="form-group col-md-4">
+            <label for="exampleInputBreed"></label>
+            <input type="text" class="form-control" id="exampleInputBreed" name="animal[breed]" placeholder="Breed">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="exampleInputFamily"></label>
+            <input type="text" class="form-control" id="exampleInputFamily" name="animal[family]" placeholder="Family">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="exampleInputName"></label>
+            <input type="text" class="form-control" id="exampleInputName" name="animal[name]" placeholder="Name">
+          </div>
+        </form>
+        <form class="form-inline" method="post" action="/animals">
+          <div class="form-group col-md-4">
+            <label for="exampleInputGender"></label>
+            <input type="text" class="form-control" id="exampleInputGender" name="animal[gender]" placeholder="Gender">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="exampleInputDate"></label>
+            <input type="date" class="form-control" id="exampleInputDate" name="animal[date]" placeholder="dd/mm/yyyy">
+          </div>
+          <button type="submit" class="btn btn-success">Add an Animal</button>
+      </div>
+    </div>
+  </body>
+</html>
